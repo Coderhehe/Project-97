@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Let's Chat</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    
+<div class="container">
+    <h3 style="color: aliceblue; text-align: center; font-size: 35px; font-family: cursive;">Let's Have A lot of fun with Let's Chat</h3>
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Log out</button>
+	<center>
+		<h1 class="header">	
+			Let's Chat	
+			<sup>
+			<img src="https://img.icons8.com/cute-clipart/2x/speech-bubble.png" class="imgs">	
+			</sup>
+		</h1>
+		<h3 class="color_white" id="husername"></h3>
+		<div class="form-group input_div_room_page">
+			<label>Add a Room below</label>
+<input placeholder="Add Room" id="roomname" class="form-control" type="text">
+		</div>
+		<button class="btn btn-info" onclick="addroom()">#Add Room</button>
+		<h3 class="color_white">#TRENDINGROOMS</h3>
+	<div id="output"></div>
+	</center>
+</div>
+<script src="second.js"></script>
+</body>
+</html>
