@@ -33,7 +33,7 @@ message2=message_data['message'];
 likes=message_data['likes'];
 tick="<h4>"+names+"<img src='tick.png'class='user_tick'> </h4>";
 message3="<h4 class='message_h4'>"+message2+"</h4>";
-lb="<button class='btn btn-warning' id="+firebase_message_id+"value="+likes+"onclick='like(this.id)'>";
+lb="<button class='btn btn-warning' id="+firebase_message_id+" value="+likes+" onclick='like(this.id)'>";
 tag="<span class='glyphicon glyphicon-thumbs-up'>Like:"+likes+"</span> </button>";
 row=tick+message3+lb+tag;
 document.getElementById("output").innerHTML+=row;
